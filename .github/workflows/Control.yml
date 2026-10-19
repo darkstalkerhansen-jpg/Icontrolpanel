@@ -1,0 +1,29 @@
+name: Interstellar Control Panel Daemon
+on:
+  repository_dispatch:
+    types: [control_action]
+
+jobs:
+  execute_command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Environment Route Dispatcher
+        run: |
+          ACTION="${{ github.event.client_payload.action }}"
+          echo "Received remote request for action: $ACTION"
+          
+          if [ "$ACTION" == "open" ]; then
+            echo "🌌 Downloading and compiling Interstellar Core..."
+            curl -L https://github.com -o interstellar.zip
+            unzip -q interstellar.zip
+            cd Interstellar-main
+            npm install --ignore-scripts --legacy-peer-deps
+            
+          elif [ "$ACTION" == "refresh" ]; then
+            echo "🔄 Triggering Proxy Flush and Cache Wipe..."
+            pkill -9 -f node || true
+            
+          elif [ "$ACTION" == "redeploy" ]; then
+            echo "⚡ Re-aligning proxy clusters..."
+            
+          fi
