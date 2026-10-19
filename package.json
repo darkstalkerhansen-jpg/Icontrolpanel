@@ -1,0 +1,9 @@
+{
+  "name": "interstellar-control-hub",
+  "version": "1.0.0",
+  "description": "Cloud triggers for proxy control panel",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Static hosting ready'"
+  }
+}
