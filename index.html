@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interstellar Deployment Hub</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #121212; color: #fff; max-width: 600px; margin: 40px auto; padding: 20px; }
+        h1 { border-bottom: 2px solid #333; padding-bottom: 10px; text-align: center; }
+        .description { color: #9ca3af; text-align: center; margin-bottom: 30px; font-size: 14px; }
+        .btn-group { display: flex; flex-direction: column; gap: 20px; }
+        .deploy-card { background: #1e1e1e; border: 1px solid #333; padding: 20px; border-radius: 8px; display: flex; flex-direction: column; gap: 10px; }
+        .deploy-title { font-size: 18px; font-weight: bold; color: #3b82f6; }
+        .deploy-desc { font-size: 13px; color: #9ca3af; }
+        a { text-decoration: none; text-align: center; font-weight: bold; color: white; padding: 12px; border-radius: 6px; transition: background 0.2s; }
+        
+        .koyeb-btn { background: #000; border: 1px solid #3b82f6; }
+        .koyeb-btn:hover { background: #111; }
+        .zeabur-btn { background: #000000; border: 1px solid #000; background-color: #23c45e; }
+        .zeabur-btn:hover { background-color: #16a34a; }
+        .railway-btn { background: #0b0c10; border: 1px solid #76323f; background-color: #ffffff; color: #000; }
+        .railway-btn:hover { background-color: #e5e5e5; }
+    </style>
+</head>
+<body>
+
+    <h1>🌌 Interstellar Deployment Hub</h1>
+    <div class="description">Click a button below to launch a permanent, 24/7 instance of the Interstellar proxy on a free cloud environment.</div>
+    
+    <div class="btn-group">
+        <!-- Option 1: Koyeb (Free tier stays online 24/7) -->
+        <div class="deploy-card">
+            <div class="deploy-title">🚀 Deploy to Koyeb</div>
+            <div class="deploy-desc">Deploys Interstellar to a free micro-container. Stays active 24/7 and does not expire.</div>
+            <a class="koyeb-btn" href="https://koyeb.com" target="_blank">Deploy on Koyeb</a>
+        </div>
+
+        <!-- Option 2: Zeabur (Free trial/credits roll over) -->
+        <div class="deploy-card">
+            <div class="deploy-title">⚡ Deploy to Zeabur</div>
+            <div class="deploy-desc">Automated server deployment. Super fast setup interface for proxy nodes.</div>
+            <a class="zeabur-btn" href="https://zeabur.com" target="_blank">Deploy on Zeabur</a>
+        </div>
+    </div>
+
+</body>
+</html>
